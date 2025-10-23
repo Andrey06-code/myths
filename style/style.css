@@ -35,5 +35,14 @@
             width: 100%;
 }
 .img{
-    width: 20%;
+    width: 250px;
+}
+.homeimg{
+    width: 50px;
+}
+.main {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
 }

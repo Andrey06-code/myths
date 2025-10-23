@@ -10,29 +10,37 @@
 </head>
 <body id="bodyid">
     <main class="main">
-        <h1>None</h1>
+        <h1>Угадай бога по картинке</h1>
         <img class="img" src="img/4/4.png">
         <div>
-        <a href="index.html">
-        <button class="answer">Афина</button>
-        </a>
+        
+        <button class="answer" onclick="error()">Афина</button>
+        
         <br>
         <br>
-        <a href="index.html">
-        <button class="answer">Афродита</button>
-        </a>
-        <br>
-        <br>
-        <a href="index.html">
-        <button class="answer">Артемида</button>
-        </a>
-        <br>
-        <br>
-        <a href="index.html">
+        
         <button class="answer" onclick="Right8()">Гера</button>
-        </a>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="error()">Артемида</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="error()">Афродита</button>
+        
         </div>
+        <br>
+        <p id="false" style="color: red; display: none">Не правильно. Гера.</p>
+        <p id="true" style="color: green; display: none">Правильно. Гера.</p>
+        <a href="index.html"><img class="homeimg" src="img/home.jpg"></a>
     </main>
     <script src="script/quiz.js"></script>
+    <script>
+    const current = sessionStorage.getItem('4.5') || 'visible';
+    sessionStorage.setItem('4.5', 'hidden');
+    </script>
 </body>
 </html>
