@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина по мифам</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body id="bodyid">
+    <main class="main">
+        <h1>Угадай бога по описанию</h1>
+        <h2>Бог царства душ и умерших -</h2>
+        <div>
+        
+        <button class="answer" onclick="error()">Аполлон</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="error()">Зевс</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="Right2()">Аид</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="error()">Геракл</button>
+        
+        </div>
+        <br>
+        <p id="false" style="color: red; display: none">Не правильно! Аид.</p>
+        <p id="true" style="color: green; display: none">Правильно! Аид.</p>
+        <a href="index.html"><img class="homeimg" src="img/home.jpg"></a>
+    </main>
+    <script src="script/quiz.js"></script>
+    <script>
+    const current = sessionStorage.getItem('1.5') || 'visible';
+    sessionStorage.setItem('1.5', 'hidden');
+    </script>
+</body>
+</html>
