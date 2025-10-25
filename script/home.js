@@ -31,13 +31,25 @@ function displayParams() {
     d.style.visibility = sessionStorage.getItem('1.4') || 'visible';
     e.style.visibility = sessionStorage.getItem('1.5') || 'visible';
 
+    f.style.visibility = sessionStorage.getItem('2.1') || 'visible';
+    g.style.visibility = sessionStorage.getItem('2.2') || 'visible';
+    h.style.visibility = sessionStorage.getItem('2.3') || 'visible';
+    i.style.visibility = sessionStorage.getItem('2.4') || 'visible';
+    j.style.visibility = sessionStorage.getItem('2.5') || 'visible';
+
+    k.style.visibility = sessionStorage.getItem('3.1') || 'visible';
+    l.style.visibility = sessionStorage.getItem('3.2') || 'visible';
+    m.style.visibility = sessionStorage.getItem('3.3') || 'visible';
+    n.style.visibility = sessionStorage.getItem('3.4') || 'visible';
+    o.style.visibility = sessionStorage.getItem('3.5') || 'visible';
+
     p.style.visibility = sessionStorage.getItem('4.1') || 'visible';
     q.style.visibility = sessionStorage.getItem('4.2') || 'visible';
     r.style.visibility = sessionStorage.getItem('4.3') || 'visible';
     s.style.visibility = sessionStorage.getItem('4.4') || 'visible';
     t.style.visibility = sessionStorage.getItem('4.5') || 'visible';
     
-const ft = parseInt(sessionStorage.getItem('ost')) || 11;
+const ft = parseInt(sessionStorage.getItem('ost')) || 22;
 if (ft === 1) {
     const form = document.getElementById('form');
     

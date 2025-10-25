@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина по мифам</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body id="bodyid">
+    <main class="main">
+        <h1>Подвиги Геракла</h1>
+        <h2>На какой остров отправился Геракл, чтобы совершить седьмой подвиг?</h2>
+        <div>
+        
+        <button class="answer" onclick="error()">Родос</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="Right8()">Крит</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="error()">Патмос</button>
+        
+        <br>
+        <br>
+        
+        <button class="answer" onclick="error()">Эгина</button>
+        
+        </div>
+        <p id="false" style="color: red; display: none">Не правильно! Крит.</p>
+        <p id="true" style="color: green; display: none">Правильно! Крит.</p>
+        <a href="index.html"><img class="homeimg" src="img/home.jpg"></a>
+    </main>
+    <script src="script/quiz.js"></script>
+    <script>
+    const current = sessionStorage.getItem('2.4') || 'visible';
+    sessionStorage.setItem('2.4', 'hidden');
+    </script>
+</body>
+</html>

@@ -10,36 +10,36 @@
 </head>
 <body id="bodyid">
     <main class="main">
-        <h1>Угадай бога по изображению</h1>
-        <img class="img" src="img/4/3.png">
+        <h1>Определение</h1>
+        <h2>Богиня любви и красоты -</h2>
         <div>
+        
+        <button class="answer" onclick="Right4()">Афродита</button>
+        
+        <br>
+        <br>
         
         <button class="answer" onclick="error()">Гера</button>
         
         <br>
         <br>
         
-        <button class="answer" onclick="Right4()">Ирида</button>
+        <button class="answer" onclick="error()">Деметра</button>
         
         <br>
         <br>
         
         <button class="answer" onclick="error()">Афина</button>
         
-        <br>
-        <br>
-        
-        <button class="answer" onclick="error()">Афродита</button>
-        
         </div>
-        <p id="false" style="color: red; display: none">Не правильно. Ирида.</p>
-        <p id="true" style="color: green; display: none">Правильно. Ирида.</p>
+        <p id="false" style="color: red; display: none">Не правильно! Афродита.</p>
+        <p id="true" style="color: green; display: none">Правильно! Афродита.</p>
         <a href="index.html"><img class="homeimg" src="img/home.jpg"></a>
     </main>
     <script src="script/quiz.js"></script>
     <script>
-    const current = sessionStorage.getItem('4.1') || 'visible';
-    sessionStorage.setItem('4.1', 'hidden');
+    const current = sessionStorage.getItem('1.2') || 'visible';
+    sessionStorage.setItem('1.2', 'hidden');
     </script>
 </body>
 </html>
