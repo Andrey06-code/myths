@@ -49,7 +49,7 @@ function displayParams() {
     s.style.visibility = sessionStorage.getItem('4.4') || 'visible';
     t.style.visibility = sessionStorage.getItem('4.5') || 'visible';
     
-const ft = parseInt(sessionStorage.getItem('ost')) || 22;
+const ft = parseInt(sessionStorage.getItem('ost')) || 21;
 if (ft === 1) {
     const form = document.getElementById('form');
     
