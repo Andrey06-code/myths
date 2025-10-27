@@ -48,9 +48,11 @@ function displayParams() {
     r.style.visibility = sessionStorage.getItem('4.3') || 'visible';
     s.style.visibility = sessionStorage.getItem('4.4') || 'visible';
     t.style.visibility = sessionStorage.getItem('4.5') || 'visible';
-    
-const ft = parseInt(sessionStorage.getItem('ost')) || 21;
-if (ft === 1) {
+
+
+const ft = parseInt(sessionStorage.getItem('ost')) || 0;
+
+if (ft >= 20) {
     const form = document.getElementById('form');
     
         form.style.display = 'block';

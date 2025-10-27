@@ -61,5 +61,5 @@ const no = document.getElementById('false');
     no.style.display = 'block';
 }
 
-const cur = parseInt(sessionStorage.getItem('ost')) || 21;
-sessionStorage.setItem('ost', cur - 1);
+const cur = parseInt(sessionStorage.getItem('ost')) || 0;
+sessionStorage.setItem('ost', cur + 1);
